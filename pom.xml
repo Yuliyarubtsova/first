@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.netologe</groupId>
-    <artifactId>first</artifactId>
+    <artifactId>statistics</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -30,28 +30,22 @@
                 <version>0.8.6</version>
                 <executions>
                     <execution>
-                        <!-- id (придумываем сами) -->
-                        <id>prepare-agent</id>
+                       <id>prepare-agent</id>
                         <phase>initialize</phase>
                         <goals>
-                            <!-- какую цель выполняем (берём из справки) -->
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <!-- id (придумываем сами) -->
                         <id>report</id>
                         <goals>
-                            <!-- какую цель выполняем (берём из справки) -->
                             <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
         </plugins>
         </build>
-
 
    <dependencies>
     <dependency>
